@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zon op het Terras</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <h1>Zon op het Terras</h1>
+  </header>
+
+  <div class="toolbar">
+    <input type="text" id="zoekveld" placeholder="Zoek op stad of terras..." />
+    <button onclick="zoekLocatie()">Zoek</button>
+    <select id="zonFilter" onchange="laadTerrassenInZicht()">
+      <option value="alle">Alle terrassen</option>
+      <option value="zon">Alleen zonnige</option>
+      <option value="schaduw">Alleen schaduw</option>
+    </select>
+  </div>
+
+  <div id="status">Terrassen worden geladen...</div>
+  <div id="map"></div>
+  <div id="melding">Terrasdata laden...</div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/suncalc/suncalc.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
