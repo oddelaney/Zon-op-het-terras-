@@ -1,0 +1,60 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+  background-color: #f9d71c;
+  text-align: center;
+  padding: 1em;
+  font-size: 1em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.4em;
+}
+
+header p {
+  margin: 0.3em 0;
+  font-size: 0.9em;
+}
+
+.search {
+  margin-top: 0.5em;
+}
+
+.search input {
+  padding: 0.5em;
+  width: 60%;
+  max-width: 300px;
+  font-size: 1em;
+}
+
+.search button {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  margin-left: 0.5em;
+}
+
+#map {
+  height: calc(100% - 140px);
+  width: 100%;
+}
+
+#melding {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  font-size: 0.9em;
+  display: none;
+}
