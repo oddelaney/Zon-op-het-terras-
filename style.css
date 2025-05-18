@@ -1,0 +1,66 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+#map {
+  height: 75vh;
+}
+#melding {
+  text-align: center;
+  padding: 0.5em;
+  background: #fffae6;
+  font-size: 0.95em;
+}
+#zonStatus {
+  text-align: center;
+  padding: 0.5em;
+  background: #003c66;
+  color: white;
+}
+header {
+  background: #007acc;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5em;
+  margin-top: 0.8em;
+}
+.controls input, .controls select, .controls button {
+  padding: 0.5em;
+  font-size: 1em;
+  border-radius: 6px;
+  border: none;
+}
+.controls button {
+  background-color: #004d80;
+  color: white;
+  cursor: pointer;
+}
+.popup-actions {
+  margin-top: 0.5em;
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+}
+.popup-actions button {
+  font-size: 0.8em;
+  padding: 0.3em 0.6em;
+  border-radius: 5px;
+  border: none;
+  background: #007acc;
+  color: white;
+  cursor: pointer;
+}
+.popup-actions button.fav.saved {
+  background: #d9534f;
+}
