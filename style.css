@@ -1,0 +1,120 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #333;
+}
+
+h1 {
+  margin-top: 30px;
+  font-size: 26px;
+}
+
+.ticket-box {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.ticket-icon {
+  font-size: 28px;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ticket-status {
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: #ff9800;
+}
+
+.ticket-status[data-status="Open"] {
+  background: #4caf50;
+}
+.ticket-status[data-status="In behandeling"] {
+  background: #2196f3;
+}
+.ticket-status[data-status="Gesloten"] {
+  background: #9e9e9e;
+}
+
+.ball {
+  width: 100%;
+  padding: 30px 15px;
+  background: #eaf1f8;
+  border-radius: 8px;
+  border: 1px dashed #aac1d1;
+}
+
+.lens {
+  background-color: #dbe9f4;
+  border-radius: 8px;
+  padding: 18px;
+  font-size: 16px;
+  color: #222;
+  font-weight: 500;
+  min-height: 60px;
+}
+
+.ticket-animate {
+  animation: openTicket 0.6s ease-out;
+}
+
+@keyframes openTicket {
+  0% {
+    transform: scale(0.2) rotateX(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+#permissionBtn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  background: #0078D4;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hint {
+  margin-top: 20px;
+  color: #666;
+}
+
+.credit {
+  margin-top: 40px;
+  color: #999;
+}
+
+.credit span {
+  text-decoration: underline;
+}
